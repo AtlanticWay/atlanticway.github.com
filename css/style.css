@@ -237,6 +237,7 @@ nav a:hover{
 		
 	#main aside{
 		float:right;
+		position:top;
 		width:28%;
 	}
 }
