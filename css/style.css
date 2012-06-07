@@ -151,7 +151,7 @@ nav a:hover{
 #footer-container footer{
 	color:white;
 	padding:20px 0;
-	height: 500px;
+	height: 330px;
 	position: relative;
 	z-index: 10;
 }
@@ -169,7 +169,7 @@ nav a:hover{
 
 
 .clearfooter {
-height: 500px;
+height: 330px;
 clear: both;
 }
 
