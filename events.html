@@ -1,113 +1,15 @@
-<!doctype html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-	<title>Atlantic Way Apartments - Atlantic Way Apartments</title>
-	<meta name="Atlantic Way Apartments - Atlantic Way Apartments" content="">
-	<meta name="Paul Burke" content="">
-
-	<meta name="viewport" content="width=device-width">
-
-	<link rel="stylesheet" href="http://atlanticway.info/css/style.css">
-	<link rel="stylesheet" type="text/css" href="http://atlanticway.info/css/skin.css" />
-
-	<script type="text/javascript" src="http://atlanticway.info/js/libs/jquery-1.4.2.min.js"></script>
-	<script type="text/javascript" src="http://atlanticway.info/js/libs/jquery.jcarousel.min.js"></script>
-	<script type="text/javascript" src="http://atlanticway.info/js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
-
-</head>
-<body>
-<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-
-	<div id="header-container">
-		<header class="wrapper clearfix">
-			<a href="http://atlanticway.info/index.html"><h1 id="title">Atlantic Way Apartments</h1></a>
-			<nav>
-				<ul>
-					<li><a href="http://atlanticway.info/news.html">News</a></li>
-					<li><a href="http://atlanticway.info/events.html">Events</a></li>
-					<li><a href="http://atlanticway.info/cameras.html">Cameras</a></li>
-				</ul>
-			</nav>
-		</header>
-	</div>
-	<div id="main-container">
-
-		<div id="main" class="wrapper clearfix">
-					<div id="header-picture">
-						<pic><img src="http://atlanticway.info/img/header.png" alt="Slieve League" align="center" width = "100%" /></pic>
-					</div>
-			
-   				
-					</br>
-					<aside>
-					<h2><a href="/2012/06/23/Barbeque">2012-06-23 00:00:00 +0100</a></h2>
-						Barbeque
-					</aside>
-			  	
-			
-   				
-			
-   				
-			
-   				
-			
-   				
-			
-   				
-			
-   				
-			
-   				
-			
+﻿---
+layout: default
+title: Atlantic Way Apartments
+---
 
 
-				
-   
+{% for post in site.posts limit:11 %}
+   {% if post.categories contains 'event' %}
 <article>
-  <h2><a href="/2012/06/23/Barbeque">23 June 2012: Barbeque</a></h2>
-<p>Clean up day and get together on the 23rd of June 2012</p>
-
-</br></br><a href="/2012/06/23/Barbeque">(more)</a>
+  <h2><a href="{{ post.url }}">{{ post.date | date_to_long_string }}: {{ post.title }}</a></h2>
+{{ post.content }}
+</br></br><a href="{{ post.url }}">(more)</a>
 </article>
-  
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-			
-		</div> <!-- #main -->
-		<div class="clearfooter"></div>
-	</div> <!-- #main-container -->
-
-	<div id="footer-container">
-		<footer class="wrapper">
-			<div align="right">
-				<a href="http://www.github.com" target="_blank"><img src="http://atlanticway.info/img/github.png" alt="Github"/></a>
-				<a href="http://jekyllrb.com/" target="_blank"><img src="http://atlanticway.info/img/jekyll.png" alt="Jekyll" /></a>
-				<h4>Designed by Paul Burke</h4>
-			</div>
-		</footer>
-	</div>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="http://atlanticway.info/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
-
-<script src="http://atlanticway.info/js/script.js"></script>
-</body>
-</html>
+  {% endif %}
+{%endfor%}
