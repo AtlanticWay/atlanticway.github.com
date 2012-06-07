@@ -226,12 +226,6 @@ clear: both;
 		        box-shadow:0 5px 10px #aaa;
 	}
 
-	#header-picture pic{
-		-webkit-box-shadow:0 5px 10px #aaa;
-		   -moz-box-shadow:0 5px 10px #aaa;
-		        box-shadow:0 5px 10px #aaa;		
-	}
-
 /* ============
     WIDE: Menu
    ============ */
