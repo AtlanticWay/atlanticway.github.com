@@ -247,11 +247,15 @@ clear: both;
 		float:left;
 		width:57%;
 	}
-		
-	#main aside{
+
+	#main asidecontainer{
 		float:right;
 		position:top;
 		width:28%;
+	}
+		
+	#main aside{
+		width:100%;
 	}
 }
 
